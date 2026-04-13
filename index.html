@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuvam Rijal - Graphic Design Learner</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">Shuvam Rijal</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#growth">Journey</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Graphic Design<br><span class="gradient-text">Learner</span></h1>
+        <p>Student building design skills through practice and passion</p>
+        <a href="#portfolio" class="cta-button">See My Work</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+        <p>
+            I am <strong>Shuvam Rijal</strong>, a passionate graphic design learner focused on building strong visual communication skills.
+        </p>
+
+        <p>
+            I work mainly with Canva and currently learning Photoshop for advanced editing.
+        </p>
+
+        <ul style="margin-top: 15px; color: #94a3b8;">
+            <li>Poster & social media design</li>
+            <li>Typography & color theory</li>
+            <li>Learning Photoshop basics</li>
+        </ul>
+    </div>
+</section>
+
+<!-- GROWTH -->
+<section id="growth">
+    <h2 class="section-title">My Learning Journey</h2>
+
+    <div class="growth-timeline">
+        <div class="growth-item">
+            <h3>01. Design Fundamentals</h3>
+            <p>Learning Canva basics, spacing, and layout structure.</p>
+        </div>
+
+        <div class="growth-item">
+            <h3>02. Color Theory</h3>
+            <p>Understanding colors and visual emotion.</p>
+        </div>
+
+        <div class="growth-item">
+            <h3>03. Typography</h3>
+            <p>Font pairing and readability practice.</p>
+        </div>
+
+        <div class="growth-item">
+            <h3>04. Layout & Composition</h3>
+            <p>Improving structure and balance.</p>
+        </div>
+
+        <div class="growth-item">
+            <h3>05. Photoshop Basics</h3>
+            <p>Learning editing and retouching.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO (FIXED - NO DUPLICATES) -->
+<section id="portfolio">
+    <h2 class="section-title">My Portfolio</h2>
+
+    <div class="portfolio-grid">
+
+        <img src="images/poster1.png" class="portfolio-item" onclick="openLightbox(this)">
+        <img src="images/poster2.png" class="portfolio-item" onclick="openLightbox(this)">
+        <img src="images/poster3.png" class="portfolio-item" onclick="openLightbox(this)">
+        <img src="images/poster4.png" class="portfolio-item" onclick="openLightbox(this)">
+        <img src="images/poster5.png" class="portfolio-item" onclick="openLightbox(this)">
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-in">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-item">
+            <i class="fas fa-layer-group skill-icon"></i>
+            <h3>Canva Design</h3>
+            <p>
+                Creating posters, social media posts, banners, and layouts using Canva with focus on modern design styles.
+            </p>
+        </div>
+
+        <div class="skill-item">
+            <i class="fas fa-image skill-icon"></i>
+            <h3>Photoshop</h3>
+            <p>
+                Learning Photoshop for photo editing, background removal, retouching, and advanced creative compositions.
+            </p>
+        </div>
+
+        <div class="skill-item">
+            <i class="fas fa-palette skill-icon"></i>
+            <h3>Color Theory</h3>
+            <p>
+                Understanding color combinations, contrast, and how colors affect mood and visual storytelling.
+            </p>
+        </div>
+
+        <div class="skill-item">
+            <i class="fas fa-font skill-icon"></i>
+            <h3>Typography</h3>
+            <p>
+                Font pairing, spacing, and hierarchy to create clear and attractive designs.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- CONTACT -->
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <!-- Google Form Embed -->
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScmiBfJSCxh3X-Lz_pOo6zRZrU3cu24RqeM0Wy7fXTWkVElrQ/viewform?embedded=true"
+            width="100%"
+            height="700"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            Loading…
+        </iframe>
+
+    </div>
+</section>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
